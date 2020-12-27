@@ -45,23 +45,31 @@
         <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">
             <div class="login-box card">
                 <div class="card-body">
-                    <form class="form-horizontal form-material" id="loginform" action="chat.html">
+                    <div class="form-horizontal form-material" id="loginform">
                         <h3 class="box-title m-b-20">Ingresar al Chat</h3>
                         <div class="form-group ">
                             <div class="col-xs-12">
-                                <input class="form-control" type="text" required="" placeholder="Nombre de usuario" name="nombre"> </div>
+                                <input id="nombre-usuario" class="form-control" type="text" required="" placeholder="Nombre de usuario" name="nombre"> </div>
                         </div>
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <input class="form-control" type="text" required="" placeholder="Sala de chat" name="sala"> </div>
+                                <input id="sala-chat" class="form-control" type="text" required="" placeholder="Sala de chat" name="sala"> </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input id="email" class="form-control" type="text" required="" placeholder="Email" name="email"> </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input id="clave" class="form-control" type="text" required="" placeholder="Contraseña" name="clave"> </div>
                         </div>
 
                         <div class="form-group text-center">
                             <div class="col-xs-12 p-b-20">
-                                <button class="btn btn-block btn-lg btn-info btn-rounded" type="submit">Ingresar al chat</button>
+                                <button class="btn btn-block btn-lg btn-info btn-rounded" onclick="login()">Ingresar al chat</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
 
                 </div>
             </div>
